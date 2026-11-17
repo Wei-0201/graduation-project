@@ -1,0 +1,49 @@
+{
+  "schema": "path-stage-model-v1",
+  "stages": [
+    "straight",
+    "approach_left",
+    "turn_left",
+    "approach_right",
+    "turn_right",
+    "exit_straight"
+  ],
+  "width": 320,
+  "height": 240,
+  "near_y": 180,
+  "far_y": 120,
+  "preprocessing": "pil_rgb_resize224_bgr_imagenet",
+  "active_stage_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "unsupported_stages": [
+    "exit_straight"
+  ],
+  "best_epoch": 20,
+  "model_sha256": "a7b5403fc1d978cc2065311ca5f6a2d261e81627f66fa9cbb428d79a957be52f",
+  "release": "V5 TEST",
+  "hardware_tested": false,
+  "training_images": 159,
+  "validation_images": 55,
+  "validation_metrics": {
+    "n": 55,
+    "wrong_near_direction": 0,
+    "clear_near_count": 35,
+    "stage_correct": 42,
+    "early_as_active": 3,
+    "approach_count": 16,
+    "near_mae_px": 15.160605898770418,
+    "far_mae_px": 16.461946452747693,
+    "stage_accuracy": 0.7636363636363637,
+    "selected_epoch": 20,
+    "unsupported_stages": [
+      "exit_straight"
+    ]
+  },
+  "control": "near target primary; far assist max 0.08 only for confident matching active turn; no route timer",
+  "stage_confidence_note": "Softmax score is not calibrated probability"
+}

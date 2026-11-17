@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="切換交通標誌，並在 STOP 模式自動循環顯示。">
+  <title>交通標誌切換與計時</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, "Noto Sans TC", sans-serif; color: #edf4ff; background: #101827; }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; min-height: 100vh; }
+    main { width: min(100%, 1080px); margin: auto; padding: clamp(18px, 4vw, 42px); }
+    header { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+    h1 { font-size: clamp(1.45rem, 3vw, 2rem); letter-spacing: .04em; margin: 0; }
+    .subtitle { color: #a8b7cc; margin: 6px 0 0; font-size: .94rem; }
+    .badge { color: #b9caff; border: 1px solid #3a4d70; border-radius: 99px; padding: 6px 12px; font-size: .8rem; white-space: nowrap; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 20px; }
+    .stage { min-height: min(68vh, 650px); display: grid; place-items: center; position: relative; overflow: hidden; background: radial-gradient(circle at 50% 42%, #293957, #172237 70%); border: 1px solid #354562; border-radius: 24px; padding: 28px; }
+    .stage img { display: block; width: min(100%, 540px); max-height: min(59vh, 560px); object-fit: contain; border-radius: 12px; box-shadow: 0 20px 50px #0005; }
+    .panel { border: 1px solid #354562; border-radius: 24px; background: #1a263b; padding: 22px; align-self: start; }
+    .panel h2 { font-size: 1rem; margin: 0 0 15px; color: #c6d5e8; }
+    .choices { display: grid; gap: 10px; }
+    button { font: inherit; cursor: pointer; }
+    .choice, .reset { width: 100%; border-radius: 13px; padding: 13px 16px; text-align: left; font-weight: 650; color: #edf4ff; background: #263651; border: 1px solid #455a79; }
+    .choice:hover, .reset:hover { background: #344866; }
+    .choice[aria-pressed="true"] { background: #dceaff; border-color: #dceaff; color: #14243d; }
+    .choice small { display: block; font-size: .76rem; font-weight: 450; opacity: .76; margin-top: 2px; }
+    .status { margin: 24px 0 14px; min-height: 68px; border-top: 1px solid #3a4d69; padding-top: 18px; color: #c6d5e8; }
+    .status strong { display: block; color: white; font-size: 1.2rem; margin-top: 5px; font-variant-numeric: tabular-nums; }
+    .reset { text-align: center; background: #4264a6; border-color: #6585c4; }
+    .hint { color: #9eafc7; font-size: .82rem; line-height: 1.6; margin: 15px 0 0; }
+    @media (max-width: 720px) { .layout { grid-template-columns: 1fr; } .stage { min-height: 48vh; } .stage img { max-height: 43vh; } .panel { padding: 18px; } .choices { grid-template-columns: repeat(3, 1fr); } .choice { padding: 11px; text-align: center; } .choice small { display: none; } }
+    @media (max-width: 390px) { .choices { gap: 6px; } .choice { font-size: .88rem; padding: 10px 5px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><h1>交通標誌切換</h1><p class="subtitle">選擇圖片，STOP 模式會自動循環顯示</p></div>
+      <span class="badge">自動循環</span>
+    </header>
+    <div class="layout">
+      <section class="stage" aria-label="目前顯示的交通標誌">
+        <img id="sign" src="images/down.jpg" alt="向下箭頭" width="1206" height="1206">
+      </section>
+      <aside class="panel">
+        <h2>選擇圖片</h2>
+        <div class="choices" role="group" aria-label="選擇交通標誌">
+          <button type="button" class="choice" data-mode="stop" aria-pressed="false">STOP<small>定時顯示</small></button>
+          <button type="button" class="choice" data-mode="down" aria-pressed="true">向下<small>持續顯示</small></button>
+          <button type="button" class="choice" data-mode="up" aria-pressed="false">向上<small>持續顯示</small></button>
+        </div>
+        <div class="status" aria-live="polite"><span id="status-label">目前顯示</span><strong id="status-value">向下箭頭</strong></div>
+        <button type="button" id="reset" class="reset">重置計時</button>
+        <p class="hint">選擇 STOP 或按重置後，標誌會立刻亮起，之後暫時熄滅並自動重複。</p>
+      </aside>
+    </div>
+  </main>
+  <script>
+    const signs = {
+      stop: { src: 'images/stop.jpg', alt: 'STOP 停止標誌' },
+      down: { src: 'images/down.jpg', alt: '向下箭頭' },
+      up: { src: 'images/up.jpg', alt: '向上箭頭' }
+    };
+    const sign = document.getElementById('sign');
+    const statusLabel = document.getElementById('status-label');
+    const statusValue = document.getElementById('status-value');
+    const choices = [...document.querySelectorAll('.choice')];
+    let mode = 'down';
+    let cycleStart = performance.now();
+
+    function showImage(name) {
+      sign.hidden = false;
+      if (sign.dataset.current !== name) {
+        sign.src = signs[name].src;
+        sign.alt = signs[name].alt;
+        sign.dataset.current = name;
+      }
+    }
+
+    function render() {
+      if (mode !== 'stop') {
+        showImage(mode);
+        statusLabel.textContent = '目前顯示';
+        statusValue.textContent = signs[mode].alt;
+        return;
+      }
+      const elapsed = (performance.now() - cycleStart) % 10000;
+      if (elapsed < 5000) {
+        showImage('stop');
+        statusLabel.textContent = 'STOP 狀態';
+        statusValue.textContent = '顯示中';
+      } else {
+        sign.hidden = true;
+        statusLabel.textContent = 'STOP 狀態';
+        statusValue.textContent = '已熄滅';
+      }
+    }
+
+    function selectMode(next) {
+      mode = next;
+      cycleStart = performance.now();
+      choices.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.mode === mode)));
+      render();
+    }
+
+    choices.forEach(button => button.addEventListener('click', () => selectMode(button.dataset.mode)));
+    document.getElementById('reset').addEventListener('click', () => selectMode(mode));
+    render();
+    setInterval(render, 100);
+  </script>
+</body>
+</html>

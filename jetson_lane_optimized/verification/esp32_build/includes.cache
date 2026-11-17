@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\USER\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.11\\cores\\esp32"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\USER\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.11\\variants\\esp32"
+  },
+  {
+    "Sourcefile": "D:\\畢業專題\\jetson_lane_optimized\\verification\\esp32_build\\sketch\\esp32_soft_start.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

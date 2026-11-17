@@ -1,0 +1,23 @@
+{
+  "schema": "clean-xy-rebuild-v1",
+  "initialization": "ImageNet ResNet18 only; no trained-car checkpoint loaded",
+  "allowed_source": "D:\\\u7562\u696d\u5c08\u984c\\model_centering\\dataset_xy_full_20261021",
+  "rejected_annotation_inputs": [],
+  "training_images": 6956,
+  "validation_images": 773,
+  "invalid_images": 223,
+  "y_weight": 0.03,
+  "best_epoch": 20,
+  "best_metrics": {
+    "n": 773,
+    "x_mae_px": 9.745449423789978,
+    "x_p90_px": 22.49106216430665,
+    "y_mae_px": 8.426253497600555,
+    "x_mse": 0.008765090256929398,
+    "xy_mse": 0.009389722719788551
+  },
+  "stop_reason": "max_epochs",
+  "note": "Identical image bytes do not cross the split; nearby photographs may still correlate. Validation selects checkpoint, not independent driving test.",
+  "model_sha256": "3eeb95d9f3eb7db5512565c8ada3276bbf9a4d5e19cf76e89df31b7b79df8f96",
+  "hardware_tested": false
+}

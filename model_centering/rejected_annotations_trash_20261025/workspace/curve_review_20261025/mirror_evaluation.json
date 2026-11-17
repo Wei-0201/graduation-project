@@ -1,0 +1,50 @@
+{
+  "review": {
+    "single": {
+      "n": 29,
+      "x_mae_px": 25.481428146362305,
+      "x_p90_px": 57.61424255371093,
+      "x_mse": 0.048529647290706635,
+      "clear_targets": 25,
+      "wrong_direction": 1,
+      "left_mae_px": 33.138694763183594,
+      "right_mae_px": 10.932624816894531
+    },
+    "mirror_average": {
+      "n": 29,
+      "x_mae_px": 27.08062171936035,
+      "x_p90_px": 64.53524780273436,
+      "x_mse": 0.05551404133439064,
+      "clear_targets": 25,
+      "wrong_direction": 1,
+      "left_mae_px": 35.29499435424805,
+      "right_mae_px": 11.473321914672852
+    },
+    "disagree_p90": 18.180461502075193,
+    "disagree_max": 41.2786865234375
+  },
+  "old_aligned": {
+    "single": {
+      "n": 150,
+      "x_mae_px": 10.064547538757324,
+      "x_p90_px": 21.64157848358154,
+      "x_mse": 0.007566672284156084,
+      "clear_targets": 99,
+      "wrong_direction": 2,
+      "left_mae_px": 9.612757682800293,
+      "right_mae_px": 10.553987503051758
+    },
+    "mirror_average": {
+      "n": 150,
+      "x_mae_px": 8.863517761230469,
+      "x_p90_px": 18.363463973999018,
+      "x_mse": 0.006154618691653013,
+      "clear_targets": 99,
+      "wrong_direction": 0,
+      "left_mae_px": 8.325910568237305,
+      "right_mae_px": 9.445926666259766
+    },
+    "disagree_p90": 14.505709648132319,
+    "disagree_max": 31.915733337402344
+  }
+}

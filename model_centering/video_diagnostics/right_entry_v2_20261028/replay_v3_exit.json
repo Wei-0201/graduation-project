@@ -1,0 +1,80 @@
+{
+  "csv_aligned_prefix_frames": 779,
+  "exit_ease_frames": 0,
+  "right_ease_frames": 72,
+  "examples": [
+    {
+      "frame": "254",
+      "raw": -0.2978331446647644,
+      "adjusted": -0.020000000000000018,
+      "source": "PAIR"
+    },
+    {
+      "frame": "255",
+      "raw": -0.3258562386035919,
+      "adjusted": -0.020000000000000018,
+      "source": "PAIR"
+    },
+    {
+      "frame": "256",
+      "raw": -0.34838664531707764,
+      "adjusted": -0.020000000000000018,
+      "source": "PAIR"
+    },
+    {
+      "frame": "257",
+      "raw": -0.2410343587398529,
+      "adjusted": -0.020000000000000018,
+      "source": null
+    },
+    {
+      "frame": "258",
+      "raw": -0.2587818503379822,
+      "adjusted": -0.020000000000000018,
+      "source": null
+    },
+    {
+      "frame": "259",
+      "raw": -0.18787506222724915,
+      "adjusted": -0.18787506222724915,
+      "source": null
+    },
+    {
+      "frame": "455",
+      "raw": -0.3268532156944275,
+      "adjusted": -0.01999999999999999,
+      "source": null
+    },
+    {
+      "frame": "456",
+      "raw": -0.2689524292945862,
+      "adjusted": -0.01999999999999999,
+      "source": null
+    },
+    {
+      "frame": "457",
+      "raw": -0.24061203002929688,
+      "adjusted": -0.24061203002929688,
+      "source": "RIGHT TRACK"
+    },
+    {
+      "frame": "458",
+      "raw": -0.2984139323234558,
+      "adjusted": -0.01999999999999999,
+      "source": null
+    },
+    {
+      "frame": "459",
+      "raw": -0.3240935206413269,
+      "adjusted": -0.3240935206413269,
+      "source": "RIGHT TRACK"
+    },
+    {
+      "frame": "460",
+      "raw": -0.3237222135066986,
+      "adjusted": -0.008599167822468778,
+      "source": "RIGHT TRACK"
+    }
+  ],
+  "limitations": "No complete telemetry for later AVI frames; recorded-frame replay is not a closed-loop vehicle test."
+}

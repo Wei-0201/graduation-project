@@ -1,0 +1,15 @@
+{
+  "n": 55,
+  "wrong_near_direction": 0,
+  "clear_near_count": 35,
+  "stage_correct": 42,
+  "early_as_active": 3,
+  "approach_count": 16,
+  "near_mae_px": 15.160605898770418,
+  "far_mae_px": 16.461946452747693,
+  "stage_accuracy": 0.7636363636363637,
+  "selected_epoch": 20,
+  "unsupported_stages": [
+    "exit_straight"
+  ]
+}

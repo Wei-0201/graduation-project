@@ -1,0 +1,128 @@
+{
+  "reason": "User rejected recent annotations and derived checkpoints; permanent deletion blocked, using recoverable quarantine",
+  "excluded_paths": [
+    {
+      "source": "D:\\畢業專題\\model_centering\\curve_review_20261025",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\curve_review_20261025"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\labeling",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\labeling"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\labeling_extra240",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\labeling_extra240"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\labels_received_20261025.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\labels_received_20261025.json"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\labels_extra240_received_20261025.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\labels_extra240_received_20261025.json"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\annotation_check.jpg",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\annotation_check.jpg"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\v5_test_replay",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\v5_test_replay"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\jetson_ready_learned_v4_20261025",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\jetson_ready_learned_v4_20261025"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\jetson_ready_learned_v4_20261025.zip",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\jetson_ready_learned_v4_20261025.zip"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\jetson_ready_learned_v41_20261025",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\jetson_ready_learned_v41_20261025"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\jetson_ready_learned_v41_20261025.zip",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\jetson_ready_learned_v41_20261025.zip"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\jetson_ready_learned_path_v5_20261025",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\jetson_ready_learned_path_v5_20261025"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\jetson_ready_learned_path_v5_20261025.zip",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\jetson_ready_learned_path_v5_20261025.zip"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\jetson_ready_learned_path_v51_20261025",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\jetson_ready_learned_path_v51_20261025"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\jetson_ready_learned_path_v51_20261025.zip",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\jetson_ready_learned_path_v51_20261025.zip"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\best_steering_model_xy_review_aligned_v4_20261025.baseline_predictions.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\best_steering_model_xy_review_aligned_v4_20261025.baseline_predictions.json"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\best_steering_model_xy_review_aligned_v4_20261025.pth",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\best_steering_model_xy_review_aligned_v4_20261025.pth"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\best_steering_model_xy_review_aligned_v4_20261025.pth.predictions.npz",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\best_steering_model_xy_review_aligned_v4_20261025.pth.predictions.npz"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\best_steering_model_xy_review_aligned_v4_20261025.report.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\best_steering_model_xy_review_aligned_v4_20261025.report.json"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\best_steering_model_xy_review_v4_20261025.baseline_predictions.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\best_steering_model_xy_review_v4_20261025.baseline_predictions.json"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\best_steering_model_xy_review_v4_20261025.pth",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\best_steering_model_xy_review_v4_20261025.pth"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\best_steering_model_xy_review_v4_20261025.pth.predictions.npz",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\best_steering_model_xy_review_v4_20261025.pth.predictions.npz"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\best_steering_model_xy_review_v4_20261025.report.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\best_steering_model_xy_review_v4_20261025.report.json"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\path_stage_v5_balanced_20261025.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\path_stage_v5_balanced_20261025.json"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\path_stage_v5_balanced_20261025.pth",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\path_stage_v5_balanced_20261025.pth"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\path_stage_v5_observed_20261025.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\path_stage_v5_observed_20261025.json"
+    },
+    {
+      "source": "D:\\畢業專題\\model_centering\\learned_path_v5\\path_stage_v5_observed_20261025.pth",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\workspace\\learned_path_v5\\path_stage_v5_observed_20261025.pth"
+    },
+    {
+      "source": "C:\\Users\\USER\\Downloads\\curve_target_labels_20261025.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\downloads\\curve_target_labels_20261025.json"
+    },
+    {
+      "source": "C:\\Users\\USER\\Downloads\\path_stage_labels_20261025.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\downloads\\path_stage_labels_20261025.json"
+    },
+    {
+      "source": "C:\\Users\\USER\\Downloads\\path_stage_labels_extra240_20261025.json",
+      "destination": "D:\\畢業專題\\model_centering\\rejected_annotations_trash_20261025\\downloads\\path_stage_labels_extra240_20261025.json"
+    }
+  ],
+  "allowed_training_source": "dataset_xy_full_20261021",
+  "initialization": "ImageNet only; no task resume",
+  "completed": true
+}

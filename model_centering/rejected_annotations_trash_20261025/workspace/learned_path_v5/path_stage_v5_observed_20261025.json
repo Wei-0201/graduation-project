@@ -1,0 +1,1511 @@
+{
+  "schema": "path-stage-model-v1",
+  "stages": [
+    "straight",
+    "approach_left",
+    "turn_left",
+    "approach_right",
+    "turn_right",
+    "exit_straight"
+  ],
+  "width": 320,
+  "height": 240,
+  "near_y": 180,
+  "far_y": 120,
+  "preprocessing": "pil_rgb_resize224_bgr_imagenet",
+  "training": {
+    "n": 159,
+    "stages": {
+      "approach_right": 50,
+      "straight": 54,
+      "approach_left": 16,
+      "turn_right": 25,
+      "turn_left": 14
+    },
+    "near_points": 159,
+    "far_points": 159
+  },
+  "validation": {
+    "n": 55,
+    "stages": {
+      "approach_right": 13,
+      "straight": 27,
+      "turn_right": 10,
+      "turn_left": 2,
+      "approach_left": 3
+    },
+    "near_points": 55,
+    "far_points": 55
+  },
+  "train_ids": [
+    "bend_exit_v2_run1_f32",
+    "bend_exit_v2_run3_f548",
+    "bend_exit_v2_run4_f751",
+    "bend_exit_v3_run1_f67",
+    "bend_exit_v3_run2_f256",
+    "bend_exit_v3_run4_f610",
+    "bend_exit_v4_run1_f119",
+    "bend_exit_v4_run3_f758",
+    "bend_exit_v4_run4_f1052",
+    "bend_exit_v4_run6_f1658",
+    "bend_exit_v4_run7_f1956",
+    "bend_exit_v2_run1_f47",
+    "bend_exit_v2_run3_f560",
+    "bend_exit_v2_run4_f764",
+    "bend_exit_v3_run1_f76",
+    "bend_exit_v3_run2_f266",
+    "bend_exit_v3_run4_f619",
+    "bend_exit_v4_run1_f133",
+    "bend_exit_v4_run3_f779",
+    "bend_exit_v4_run4_f1072",
+    "bend_exit_v4_run6_f1678",
+    "bend_exit_v4_run7_f1976",
+    "bend_exit_v2_run1_f63",
+    "bend_exit_v2_run3_f573",
+    "bend_exit_v2_run4_f777",
+    "bend_exit_v3_run1_f85",
+    "bend_exit_v3_run4_f629",
+    "bend_exit_v4_run1_f147",
+    "bend_exit_v4_run3_f801",
+    "bend_exit_v4_run4_f1092",
+    "bend_exit_v4_run6_f1698",
+    "bend_exit_v4_run7_f1996",
+    "bend_exit_v2_run1_f79",
+    "bend_exit_v2_run4_f790",
+    "bend_exit_v3_run1_f94",
+    "bend_exit_v3_run4_f639",
+    "bend_exit_v4_run3_f823",
+    "bend_exit_v4_run7_f2016",
+    "bend_exit_v2_run3_f598",
+    "bend_exit_v3_run4_f649",
+    "bend_exit_v4_run3_f845",
+    "bend_exit_v4_run1_f189",
+    "bend_exit_v4_run6_f1760",
+    "bend_exit_v2_run1_f126",
+    "bend_exit_v4_run3_f889",
+    "bend_exit_v4_run4_f1174",
+    "bend_exit_v2_run1_f30",
+    "bend_exit_v2_run3_f543",
+    "bend_exit_v2_run4_f741",
+    "bend_exit_v3_run1_f57",
+    "bend_exit_v3_run2_f246",
+    "bend_exit_v3_run4_f602",
+    "bend_exit_v4_run1_f109",
+    "bend_exit_v4_run3_f748",
+    "bend_exit_v4_run4_f1042",
+    "bend_exit_v4_run6_f1648",
+    "bend_exit_v4_run7_f1946",
+    "bend_exit_v2_run1_f34",
+    "bend_exit_v2_run3_f547",
+    "bend_exit_v2_run4_f747",
+    "bend_exit_v3_run1_f63",
+    "bend_exit_v3_run2_f252",
+    "bend_exit_v3_run4_f607",
+    "bend_exit_v4_run1_f115",
+    "bend_exit_v4_run3_f759",
+    "bend_exit_v4_run4_f1048",
+    "bend_exit_v4_run6_f1654",
+    "bend_exit_v4_run7_f1952",
+    "bend_exit_v2_run3_f549",
+    "bend_exit_v2_run4_f752",
+    "bend_exit_v3_run1_f68",
+    "bend_exit_v3_run2_f254",
+    "bend_exit_v3_run4_f611",
+    "bend_exit_v4_run1_f120",
+    "bend_exit_v4_run3_f770",
+    "bend_exit_v4_run4_f1053",
+    "bend_exit_v4_run6_f1659",
+    "bend_exit_v4_run7_f1957",
+    "bend_exit_v2_run3_f552",
+    "bend_exit_v2_run4_f759",
+    "bend_exit_v3_run1_f73",
+    "bend_exit_v3_run2_f255",
+    "bend_exit_v3_run4_f616",
+    "bend_exit_v4_run1_f127",
+    "bend_exit_v4_run3_f780",
+    "bend_exit_v4_run4_f1063",
+    "bend_exit_v4_run6_f1669",
+    "bend_exit_v4_run7_f1967",
+    "bend_exit_v2_run3_f557",
+    "bend_exit_v2_run4_f762",
+    "bend_exit_v3_run1_f75",
+    "bend_exit_v3_run2_f257",
+    "bend_exit_v3_run4_f620",
+    "bend_exit_v4_run1_f131",
+    "bend_exit_v4_run3_f791",
+    "bend_exit_v4_run4_f1068",
+    "bend_exit_v4_run6_f1674",
+    "bend_exit_v4_run7_f1972",
+    "bend_exit_v2_run1_f64",
+    "bend_exit_v2_run3_f559",
+    "bend_exit_v2_run4_f765",
+    "bend_exit_v3_run1_f77",
+    "bend_exit_v3_run2_f258",
+    "bend_exit_v3_run4_f625",
+    "bend_exit_v4_run1_f134",
+    "bend_exit_v4_run3_f802",
+    "bend_exit_v4_run4_f1073",
+    "bend_exit_v4_run6_f1679",
+    "bend_exit_v4_run7_f1977",
+    "bend_exit_v2_run1_f71",
+    "bend_exit_v2_run3_f561",
+    "bend_exit_v2_run4_f772",
+    "bend_exit_v3_run1_f82",
+    "bend_exit_v3_run2_f260",
+    "bend_exit_v3_run4_f630",
+    "bend_exit_v4_run1_f146",
+    "bend_exit_v4_run3_f813",
+    "bend_exit_v4_run4_f1083",
+    "bend_exit_v4_run6_f1689",
+    "bend_exit_v4_run7_f1987",
+    "bend_exit_v2_run1_f78",
+    "bend_exit_v2_run3_f570",
+    "bend_exit_v2_run4_f775",
+    "bend_exit_v3_run1_f84",
+    "bend_exit_v3_run4_f635",
+    "bend_exit_v4_run1_f153",
+    "bend_exit_v4_run3_f824",
+    "bend_exit_v4_run4_f1088",
+    "bend_exit_v4_run6_f1694",
+    "bend_exit_v4_run7_f1992",
+    "bend_exit_v2_run1_f87",
+    "bend_exit_v2_run3_f574",
+    "bend_exit_v2_run4_f778",
+    "bend_exit_v3_run1_f86",
+    "bend_exit_v3_run4_f638",
+    "bend_exit_v4_run4_f1093",
+    "bend_exit_v4_run6_f1699",
+    "bend_exit_v4_run7_f1997",
+    "bend_exit_v2_run3_f579",
+    "bend_exit_v2_run4_f787",
+    "bend_exit_v3_run1_f91",
+    "bend_exit_v4_run6_f1721",
+    "bend_exit_v4_run7_f2007",
+    "bend_exit_v2_run1_f104",
+    "bend_exit_v2_run3_f584",
+    "bend_exit_v2_run4_f791",
+    "bend_exit_v3_run1_f95",
+    "bend_exit_v4_run6_f1732",
+    "bend_exit_v2_run3_f589",
+    "bend_exit_v2_run4_f796",
+    "bend_exit_v4_run1_f181",
+    "bend_exit_v4_run4_f1141",
+    "bend_exit_v2_run3_f594",
+    "bend_exit_v4_run1_f190",
+    "bend_exit_v4_run6_f1752",
+    "bend_exit_v2_run1_f127",
+    "bend_exit_v2_run3_f599",
+    "bend_exit_v4_run6_f1761",
+    "bend_exit_v4_run4_f1175"
+  ],
+  "validation_ids": [
+    "bend_exit_v2_run2_f304",
+    "bend_exit_v3_run3_f404",
+    "bend_exit_v4_run2_f416",
+    "bend_exit_v4_run5_f1390",
+    "bend_exit_v2_run2_f323",
+    "bend_exit_v3_run3_f418",
+    "bend_exit_v4_run2_f435",
+    "bend_exit_v4_run5_f1410",
+    "bend_exit_v3_run3_f432",
+    "bend_exit_v4_run2_f455",
+    "bend_exit_v2_run2_f349",
+    "bend_exit_v3_run3_f447",
+    "bend_exit_v2_run2_f362",
+    "bend_exit_v4_run5_f1470",
+    "bend_exit_v3_run3_f490",
+    "bend_exit_v2_run2_f294",
+    "bend_exit_v3_run3_f401",
+    "bend_exit_v4_run2_f406",
+    "bend_exit_v4_run5_f1380",
+    "bend_exit_v2_run2_f300",
+    "bend_exit_v3_run3_f405",
+    "bend_exit_v4_run2_f412",
+    "bend_exit_v4_run5_f1386",
+    "bend_exit_v2_run2_f303",
+    "bend_exit_v3_run3_f410",
+    "bend_exit_v4_run2_f415",
+    "bend_exit_v4_run5_f1391",
+    "bend_exit_v2_run2_f305",
+    "bend_exit_v3_run3_f415",
+    "bend_exit_v4_run2_f417",
+    "bend_exit_v4_run5_f1401",
+    "bend_exit_v3_run3_f419",
+    "bend_exit_v4_run2_f427",
+    "bend_exit_v4_run5_f1406",
+    "bend_exit_v3_run3_f426",
+    "bend_exit_v4_run2_f432",
+    "bend_exit_v4_run5_f1409",
+    "bend_exit_v3_run3_f433",
+    "bend_exit_v4_run2_f434",
+    "bend_exit_v4_run5_f1411",
+    "bend_exit_v2_run2_f337",
+    "bend_exit_v3_run3_f440",
+    "bend_exit_v4_run2_f436",
+    "bend_exit_v2_run2_f343",
+    "bend_exit_v3_run3_f446",
+    "bend_exit_v4_run2_f446",
+    "bend_exit_v2_run2_f348",
+    "bend_exit_v3_run3_f453",
+    "bend_exit_v4_run2_f451",
+    "bend_exit_v2_run2_f352",
+    "bend_exit_v4_run2_f454",
+    "bend_exit_v2_run2_f357",
+    "bend_exit_v4_run2_f456",
+    "bend_exit_v2_run2_f361",
+    "bend_exit_v4_run2_f482"
+  ],
+  "epochs": [
+    {
+      "epoch": 1,
+      "stage_accuracy": 0.05454545454545454,
+      "confusion": [
+        [
+          0,
+          27,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 43.89071541266008,
+      "far_mae_px": 65.64269899888473,
+      "approach_as_active_turn": 0,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 2,
+      "stage_accuracy": 0.05454545454545454,
+      "confusion": [
+        [
+          0,
+          27,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 40.438389002193105,
+      "far_mae_px": 26.7465837131847,
+      "approach_as_active_turn": 0,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 3,
+      "stage_accuracy": 0.05454545454545454,
+      "confusion": [
+        [
+          0,
+          21,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 35.21959677176042,
+      "far_mae_px": 25.900758162411776,
+      "approach_as_active_turn": 10,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 4,
+      "stage_accuracy": 0.10909090909090909,
+      "confusion": [
+        [
+          2,
+          25,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          7,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          4,
+          5,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 27.879833827777343,
+      "far_mae_px": 17.989772800965742,
+      "approach_as_active_turn": 2,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 5,
+      "stage_accuracy": 0.14545454545454545,
+      "confusion": [
+        [
+          0,
+          27,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          3,
+          2,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 22.103719650615346,
+      "far_mae_px": 18.29180182543668,
+      "approach_as_active_turn": 5,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 6,
+      "stage_accuracy": 0.6,
+      "confusion": [
+        [
+          22,
+          4,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 20.17825482975353,
+      "far_mae_px": 16.26228380203247,
+      "approach_as_active_turn": 11,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 7,
+      "stage_accuracy": 0.6363636363636364,
+      "confusion": [
+        [
+          23,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 17.887557914040304,
+      "far_mae_px": 18.42266965779391,
+      "approach_as_active_turn": 11,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 8,
+      "stage_accuracy": 0.4909090909090909,
+      "confusion": [
+        [
+          16,
+          10,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 17.697792001204057,
+      "far_mae_px": 15.787020570581609,
+      "approach_as_active_turn": 11,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 9,
+      "stage_accuracy": 0.6181818181818182,
+      "confusion": [
+        [
+          22,
+          2,
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 20.82311541817405,
+      "far_mae_px": 20.267451758818193,
+      "approach_as_active_turn": 12,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 10,
+      "stage_accuracy": 0.6363636363636364,
+      "confusion": [
+        [
+          20,
+          2,
+          1,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          5,
+          6,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          1,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 18.020440691167657,
+      "far_mae_px": 17.220776228471237,
+      "approach_as_active_turn": 8,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 11,
+      "stage_accuracy": 0.6545454545454545,
+      "confusion": [
+        [
+          17,
+          2,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          3,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 18.065162927454168,
+      "far_mae_px": 17.537092143839057,
+      "approach_as_active_turn": 4,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 12,
+      "stage_accuracy": 0.6181818181818182,
+      "confusion": [
+        [
+          20,
+          2,
+          1,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          9,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 19.51988796754317,
+      "far_mae_px": 20.288884912837634,
+      "approach_as_active_turn": 10,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 13,
+      "stage_accuracy": 0.6363636363636364,
+      "confusion": [
+        [
+          19,
+          2,
+          1,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          4,
+          7,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 17.434423507343638,
+      "far_mae_px": 16.379832488840275,
+      "approach_as_active_turn": 8,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 14,
+      "stage_accuracy": 0.6,
+      "confusion": [
+        [
+          17,
+          2,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          9,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 15.738966872475364,
+      "far_mae_px": 21.21926036314531,
+      "approach_as_active_turn": 10,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 15,
+      "stage_accuracy": 0.6363636363636364,
+      "confusion": [
+        [
+          18,
+          1,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          7,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 22.011948186700995,
+      "far_mae_px": 20.27339286804199,
+      "approach_as_active_turn": 9,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 16,
+      "stage_accuracy": 0.6363636363636364,
+      "confusion": [
+        [
+          17,
+          2,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          7,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 18.418044536763972,
+      "far_mae_px": 16.437878669391978,
+      "approach_as_active_turn": 8,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 17,
+      "stage_accuracy": 0.6181818181818182,
+      "confusion": [
+        [
+          17,
+          2,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          6,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          1,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 15.38011825951663,
+      "far_mae_px": 12.819783674586903,
+      "approach_as_active_turn": 8,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 18,
+      "stage_accuracy": 0.6909090909090909,
+      "confusion": [
+        [
+          18,
+          1,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          3,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          1,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 19.56296285499226,
+      "far_mae_px": 20.366901206970216,
+      "approach_as_active_turn": 5,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 19,
+      "stage_accuracy": 0.6,
+      "confusion": [
+        [
+          17,
+          2,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5,
+          8,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 15.120874259688637,
+      "far_mae_px": 14.354858103665439,
+      "approach_as_active_turn": 10,
+      "approach_count": 16,
+      "exit_recall": null
+    },
+    {
+      "epoch": 20,
+      "stage_accuracy": 0.6545454545454545,
+      "confusion": [
+        [
+          17,
+          2,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          9,
+          4,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          1,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "near_mae_px": 16.18744848424738,
+      "far_mae_px": 18.798555131392046,
+      "approach_as_active_turn": 6,
+      "approach_count": 16,
+      "exit_recall": null
+    }
+  ],
+  "deployment_ready": false,
+  "active_stage_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "unsupported_stages": [
+    "exit_straight"
+  ],
+  "note": "Validation selects checkpoint; not an independent test or driving verification.",
+  "best_epoch": 18,
+  "best_metrics": {
+    "stage_accuracy": 0.6909090909090909,
+    "confusion": [
+      [
+        18,
+        1,
+        1,
+        7,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        10,
+        3,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        1,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "near_mae_px": 19.56296285499226,
+    "far_mae_px": 20.366901206970216,
+    "approach_as_active_turn": 5,
+    "approach_count": 16,
+    "exit_recall": null
+  }
+}

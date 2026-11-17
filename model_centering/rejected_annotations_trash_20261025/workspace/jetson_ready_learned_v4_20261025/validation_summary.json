@@ -1,0 +1,50 @@
+{
+  "version": "learned-v4-20261025",
+  "model": "best_steering_model_xy_corrected_v4_20261025.pth",
+  "selected_epoch": 6,
+  "review_training_images": 79,
+  "review_validation_images": 29,
+  "old_training_anchors": 477,
+  "old_validation_images": 150,
+  "baseline_review": {
+    "n": 29,
+    "x_mae_px": 68.4233627319336,
+    "x_p90_px": 104.64800720214842,
+    "x_mse": 0.22639940679073334,
+    "clear_targets": 25,
+    "wrong_direction": 8,
+    "left_mae_px": 79.65350341796875,
+    "right_mae_px": 47.086082458496094
+  },
+  "selected_review": {
+    "n": 29,
+    "x_mae_px": 25.480695724487305,
+    "x_p90_px": 57.60956115722655,
+    "x_mse": 0.04852542653679848,
+    "clear_targets": 25,
+    "wrong_direction": 1,
+    "left_mae_px": 33.13656997680664,
+    "right_mae_px": 10.934547424316406
+  },
+  "baseline_old_height_matched": {
+    "n": 150,
+    "x_mae_px": 8.678991317749023,
+    "x_p90_px": 19.38083057403564,
+    "x_mse": 0.00640947325155139,
+    "clear_targets": 99,
+    "wrong_direction": 0,
+    "left_mae_px": 8.24431324005127,
+    "right_mae_px": 9.149892807006836
+  },
+  "selected_old_height_matched": {
+    "n": 150,
+    "x_mae_px": 10.064199447631836,
+    "x_p90_px": 21.63183555603027,
+    "x_mse": 0.0075660101138055325,
+    "clear_targets": 99,
+    "wrong_direction": 2,
+    "left_mae_px": 9.613158226013184,
+    "right_mae_px": 10.552827835083008
+  },
+  "limitations": "29 validation images from two held-out driving runs; checkpoint selection uses this validation set. Not an independent final test and not a physical driving result. Left turns remain harder."
+}

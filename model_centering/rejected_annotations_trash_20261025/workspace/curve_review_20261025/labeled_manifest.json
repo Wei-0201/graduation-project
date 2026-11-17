@@ -1,0 +1,974 @@
+[
+  {
+    "id": "bend_exit_v2_run1_f32",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 32,
+    "x": 209,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_209_120_bend_exit_v2_run1_f32.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f304",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 304,
+    "x": 160,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_160_120_bend_exit_v2_run2_f304.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f548",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 548,
+    "x": 179,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_179_120_bend_exit_v2_run3_f548.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f751",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 751,
+    "x": 147,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_147_120_bend_exit_v2_run4_f751.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f67",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 67,
+    "x": 204,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_204_120_bend_exit_v3_run1_f67.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run2_f256",
+    "source": "bend_exit_v3.avi",
+    "run": 2,
+    "frame": 256,
+    "x": 203,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_203_120_bend_exit_v3_run2_f256.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f404",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 404,
+    "x": 180,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_180_120_bend_exit_v3_run3_f404.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f610",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 610,
+    "x": 159,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_159_120_bend_exit_v3_run4_f610.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f38",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 38,
+    "x": 271,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_271_120_bend_exit_v2_run1_f38.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f309",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 309,
+    "x": 218,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_218_120_bend_exit_v2_run2_f309.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f553",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 553,
+    "x": 189,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_189_120_bend_exit_v2_run3_f553.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f756",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 756,
+    "x": 114,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_114_120_bend_exit_v2_run4_f756.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f70",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 70,
+    "x": 218,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_218_120_bend_exit_v3_run1_f70.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run2_f260",
+    "source": "bend_exit_v3.avi",
+    "run": 2,
+    "frame": 260,
+    "x": 222,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_222_120_bend_exit_v3_run2_f260.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f410",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 410,
+    "x": 187,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_187_120_bend_exit_v3_run3_f410.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f614",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 614,
+    "x": 201,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_201_120_bend_exit_v3_run4_f614.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f45",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 45,
+    "x": 314,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_314_120_bend_exit_v2_run1_f45.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f321",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 321,
+    "x": 316,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_316_120_bend_exit_v2_run2_f321.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f558",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 558,
+    "x": 205,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_205_120_bend_exit_v2_run3_f558.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f761",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 761,
+    "x": 104,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_104_120_bend_exit_v2_run4_f761.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f74",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 74,
+    "x": 237,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_237_120_bend_exit_v3_run1_f74.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run2_f265",
+    "source": "bend_exit_v3.avi",
+    "run": 2,
+    "frame": 265,
+    "x": 276,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_276_120_bend_exit_v3_run2_f265.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f416",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 416,
+    "x": 204,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_204_120_bend_exit_v3_run3_f416.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f618",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 618,
+    "x": 201,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_201_120_bend_exit_v3_run4_f618.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f51",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 51,
+    "x": 313,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_313_120_bend_exit_v2_run1_f51.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f327",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 327,
+    "x": 313,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_313_120_bend_exit_v2_run2_f327.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f564",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 564,
+    "x": 232,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_232_120_bend_exit_v2_run3_f564.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f767",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 767,
+    "x": 35,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_35_120_bend_exit_v2_run4_f767.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f78",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 78,
+    "x": 255,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_255_120_bend_exit_v3_run1_f78.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run2_f269",
+    "source": "bend_exit_v3.avi",
+    "run": 2,
+    "frame": 269,
+    "x": 315,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_315_120_bend_exit_v3_run2_f269.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f422",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 422,
+    "x": 215,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_215_120_bend_exit_v3_run3_f422.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f622",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 622,
+    "x": 205,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_205_120_bend_exit_v3_run4_f622.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f58",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 58,
+    "x": 314,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_314_120_bend_exit_v2_run1_f58.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f332",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 332,
+    "x": 319,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_319_120_bend_exit_v2_run2_f332.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f569",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 569,
+    "x": 215,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_215_120_bend_exit_v2_run3_f569.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f772",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 772,
+    "x": 27,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_27_120_bend_exit_v2_run4_f772.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f82",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 82,
+    "x": 265,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_265_120_bend_exit_v3_run1_f82.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f428",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 428,
+    "x": 175,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_175_120_bend_exit_v3_run3_f428.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f626",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 626,
+    "x": 198,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_198_120_bend_exit_v3_run4_f626.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f65",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 65,
+    "x": 226,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_226_120_bend_exit_v2_run1_f65.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f338",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 338,
+    "x": 316,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_316_120_bend_exit_v2_run2_f338.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f574",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 574,
+    "x": 154,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_154_120_bend_exit_v2_run3_f574.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f778",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 778,
+    "x": 49,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_49_120_bend_exit_v2_run4_f778.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f86",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 86,
+    "x": 234,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_234_120_bend_exit_v3_run1_f86.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f434",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 434,
+    "x": 101,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_101_120_bend_exit_v3_run3_f434.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f631",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 631,
+    "x": 196,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_196_120_bend_exit_v3_run4_f631.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f71",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 71,
+    "x": 215,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_215_120_bend_exit_v2_run1_f71.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f343",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 343,
+    "x": 315,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_315_120_bend_exit_v2_run2_f343.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f580",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 580,
+    "x": 74,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_74_120_bend_exit_v2_run3_f580.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f783",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 783,
+    "x": 105,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_105_120_bend_exit_v2_run4_f783.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f90",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 90,
+    "x": 192,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_192_120_bend_exit_v3_run1_f90.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f440",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 440,
+    "x": 72,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_72_120_bend_exit_v3_run3_f440.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f635",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 635,
+    "x": 198,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_198_120_bend_exit_v3_run4_f635.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f78",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 78,
+    "x": 237,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_237_120_bend_exit_v2_run1_f78.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f349",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 349,
+    "x": 234,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_234_120_bend_exit_v2_run2_f349.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f585",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 585,
+    "x": 5,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_5_120_bend_exit_v2_run3_f585.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f789",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 789,
+    "x": 149,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_149_120_bend_exit_v2_run4_f789.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f94",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 94,
+    "x": 161,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_161_120_bend_exit_v3_run1_f94.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f446",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 446,
+    "x": 51,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_51_120_bend_exit_v3_run3_f446.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f639",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 639,
+    "x": 178,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_178_120_bend_exit_v3_run4_f639.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f85",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 85,
+    "x": 314,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_314_120_bend_exit_v2_run1_f85.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f354",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 354,
+    "x": 204,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_204_120_bend_exit_v2_run2_f354.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f591",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 591,
+    "x": 5,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_5_120_bend_exit_v2_run3_f591.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f794",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 794,
+    "x": 121,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_121_120_bend_exit_v2_run4_f794.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f98",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 98,
+    "x": 133,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_133_120_bend_exit_v3_run1_f98.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f453",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 453,
+    "x": 146,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_146_120_bend_exit_v3_run3_f453.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f643",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 643,
+    "x": 172,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_172_120_bend_exit_v3_run4_f643.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f91",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 91,
+    "x": 313,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_313_120_bend_exit_v2_run1_f91.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f359",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 359,
+    "x": 166,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_166_120_bend_exit_v2_run2_f359.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f596",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 596,
+    "x": 54,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_54_120_bend_exit_v2_run3_f596.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f800",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 800,
+    "x": 22,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_22_120_bend_exit_v2_run4_f800.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f102",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 102,
+    "x": 126,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_126_120_bend_exit_v3_run1_f102.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f459",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 459,
+    "x": 204,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_204_120_bend_exit_v3_run3_f459.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f647",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 647,
+    "x": 175,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_175_120_bend_exit_v3_run4_f647.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f98",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 98,
+    "x": 295,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_295_120_bend_exit_v2_run1_f98.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f365",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 365,
+    "x": 107,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_107_120_bend_exit_v2_run2_f365.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f601",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 601,
+    "x": 136,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_136_120_bend_exit_v2_run3_f601.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f805",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 805,
+    "x": 1,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_1_120_bend_exit_v2_run4_f805.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f106",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 106,
+    "x": 102,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_102_120_bend_exit_v3_run1_f106.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f465",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 465,
+    "x": 219,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_219_120_bend_exit_v3_run3_f465.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f652",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 652,
+    "x": 154,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_154_120_bend_exit_v3_run4_f652.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f105",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 105,
+    "x": 98,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_98_120_bend_exit_v2_run1_f105.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f370",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 370,
+    "x": 104,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_104_120_bend_exit_v2_run2_f370.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f607",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 607,
+    "x": 203,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_203_120_bend_exit_v2_run3_f607.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f811",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 811,
+    "x": 0,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_0_120_bend_exit_v2_run4_f811.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f110",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 110,
+    "x": 50,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_50_120_bend_exit_v3_run1_f110.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f471",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 471,
+    "x": 188,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_188_120_bend_exit_v3_run3_f471.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f656",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 656,
+    "x": 143,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_143_120_bend_exit_v3_run4_f656.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f376",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 376,
+    "x": 34,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_34_120_bend_exit_v2_run2_f376.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f612",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 612,
+    "x": 225,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_225_120_bend_exit_v2_run3_f612.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f816",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 816,
+    "x": 1,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_1_120_bend_exit_v2_run4_f816.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f114",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 114,
+    "x": 57,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_57_120_bend_exit_v3_run1_f114.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f477",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 477,
+    "x": 166,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_166_120_bend_exit_v3_run3_f477.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f660",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 660,
+    "x": 145,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_145_120_bend_exit_v3_run4_f660.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f118",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 118,
+    "x": 32,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_32_120_bend_exit_v2_run1_f118.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run2_f381",
+    "source": "bend_exit_v2.avi",
+    "run": 2,
+    "frame": 381,
+    "x": 7,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_7_120_bend_exit_v2_run2_f381.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f617",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 617,
+    "x": 257,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_257_120_bend_exit_v2_run3_f617.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f822",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 822,
+    "x": 1,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_1_120_bend_exit_v2_run4_f822.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run1_f118",
+    "source": "bend_exit_v3.avi",
+    "run": 1,
+    "frame": 118,
+    "x": 26,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_26_120_bend_exit_v3_run1_f118.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run2_f315",
+    "source": "bend_exit_v3.avi",
+    "run": 2,
+    "frame": 315,
+    "x": 269,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_269_120_bend_exit_v3_run2_f315.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f483",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 483,
+    "x": 145,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_145_120_bend_exit_v3_run3_f483.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f664",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 664,
+    "x": 145,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_145_120_bend_exit_v3_run4_f664.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run1_f125",
+    "source": "bend_exit_v2.avi",
+    "run": 1,
+    "frame": 125,
+    "x": 121,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_121_120_bend_exit_v2_run1_f125.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run3_f623",
+    "source": "bend_exit_v2.avi",
+    "run": 3,
+    "frame": 623,
+    "x": 304,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_304_120_bend_exit_v2_run3_f623.jpg"
+  },
+  {
+    "id": "bend_exit_v2_run4_f827",
+    "source": "bend_exit_v2.avi",
+    "run": 4,
+    "frame": 827,
+    "x": 4,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_4_120_bend_exit_v2_run4_f827.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run2_f319",
+    "source": "bend_exit_v3.avi",
+    "run": 2,
+    "frame": 319,
+    "x": 196,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_196_120_bend_exit_v3_run2_f319.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run3_f489",
+    "source": "bend_exit_v3.avi",
+    "run": 3,
+    "frame": 489,
+    "x": 147,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_147_120_bend_exit_v3_run3_f489.jpg"
+  },
+  {
+    "id": "bend_exit_v3_run4_f668",
+    "source": "bend_exit_v3.avi",
+    "run": 4,
+    "frame": 668,
+    "x": 110,
+    "y": 120,
+    "path": "D:\\畢業專題\\model_centering\\curve_review_20261025\\labeled\\xy_110_120_bend_exit_v3_run4_f668.jpg"
+  }
+]

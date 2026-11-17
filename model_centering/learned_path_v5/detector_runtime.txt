@@ -1,0 +1,103 @@
+STAGE_NAMES = ['straight', 'approach_left', 'turn_left', 'approach_right',
+               'turn_right', 'exit_straight']
+
+
+def path_decision(near_x, far_x, logits, active_indices):
+    """Separate learned current path from distant preview, with no route timer.
+
+    Stage confidence is a softmax score, not a calibrated safety probability.
+    An approaching curve cannot create steering from the far point alone.
+    """
+    near = steering_from_x(float(near_x))
+    if near is None:
+        return dict(valid=False, turn=None, status='MODEL INVALID: near target outside image')
+    near_x, near_turn = near
+    far = steering_from_x(float(far_x))
+    far_x, far_turn = far if far is not None else (None, None)
+    logits = np.asarray(logits, dtype=float)
+    stage, confidence = 'uncertain', 0.
+    if logits.shape == (6,) and active_indices and np.all(np.isfinite(logits[list(active_indices)])):
+        scores = logits[list(active_indices)]
+        probs = np.exp(scores - scores.max())
+        probs /= probs.sum()
+        k = int(probs.argmax())
+        stage = STAGE_NAMES[active_indices[k]]
+        confidence = float(probs[k])
+    weight = 0.
+    turn = near_turn
+    active_left = stage == 'turn_left' and near_turn > .10
+    active_right = stage == 'turn_right' and near_turn < -.10
+    # A minority of wrong phase predictions must not create an early turn.
+    # Near geometry must independently agree with the active-turn class.
+    if confidence >= .75 and (active_left or active_right) and far_turn is not None:
+        if near_turn * far_turn > 0:
+            weight = .15
+            turn += float(np.clip(weight * (far_turn - near_turn), -.08, .08))
+    return dict(valid=True, turn=float(turn), near_turn=float(near_turn),
+                near_x=float(near_x), far_x=far_x, stage=stage,
+                stage_confidence=confidence, far_weight=weight,
+                model_x=float(near_x), model_y=180., offset=near_x - 160.,
+                status='{} {:.0f}% N:{:.0f} F:{} T:{:+.3f}'.format(
+                    stage.upper(), confidence * 100, near_x,
+                    '?' if far_x is None else '{:.0f}'.format(far_x), turn))
+
+
+class ModelLaneDetector:
+    """One shared ResNet18 predicts two centers and road stages per new image."""
+    def __init__(self, checkpoint, show_lines=False, visual_easing=False):
+        import torch
+        from torchvision import models, transforms
+        from PIL import Image
+
+        self.torch, self.transforms, self.Image = torch, transforms, Image
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        logging.info('Loading V5 learned near/far path and road-stage model...')
+        spec_path = os.path.splitext(checkpoint)[0] + '.json'
+        with open(spec_path, encoding='utf-8') as f:
+            self.spec = json.load(f)
+        if (self.spec.get('schema') != 'path-stage-model-v1' or
+                self.spec.get('stages') != STAGE_NAMES or
+                self.spec.get('near_y') != 180 or self.spec.get('far_y') != 120 or
+                self.spec.get('width') != WIDTH or self.spec.get('height') != HEIGHT or
+                self.spec.get('preprocessing') != 'pil_rgb_resize224_bgr_imagenet'):
+            raise ValueError('V5 model specification does not match runtime')
+        self.active_indices = self.spec.get('active_stage_indices', [])
+        if (not self.active_indices or any(type(i) is not int or not 0 <= i < 6 for i in self.active_indices)
+                or len(set(self.active_indices)) != len(self.active_indices)):
+            raise ValueError('Invalid supported-stage specification')
+        self.model = models.resnet18(pretrained=False)
+        self.model.fc = torch.nn.Linear(512, 8)
+        self.model.load_state_dict(torch.load(checkpoint, map_location='cpu'))
+        self.model.to(self.device).eval()
+        logging.info('V5 loaded on %s; unsupported stages: %s', self.device,
+                     self.spec.get('unsupported_stages'))
+
+    def reset(self):
+        pass  # No accumulated route or bend timer in the learned detector.
+
+    def process(self, frame, now=None):
+        now = time.monotonic() if now is None else now
+        raw = cv2.resize(frame, (WIDTH, HEIGHT))
+        mask, _ = black_mask(raw)
+        visible = has_tape_evidence(mask)
+        image = self.Image.fromarray(cv2.cvtColor(raw, cv2.COLOR_BGR2RGB))
+        image = self.transforms.functional.resize(image, (224, 224))
+        image = self.transforms.functional.to_tensor(image)
+        image = self.torch.from_numpy(image.numpy()[::-1].copy())
+        image = self.transforms.functional.normalize(image, [.485, .456, .406], [.229, .224, .225])
+        with self.torch.no_grad():
+            outputs = self.model(image.unsqueeze(0).to(self.device))[0].cpu().numpy()
+        near_x, far_x = (outputs[:2] + 1.) * 160.
+        result = path_decision(near_x, far_x, outputs[2:], self.active_indices)
+        result.update(timestamp=now, lane_visible=visible, visual_turn=None,
+                      visual_source='NONE', visual_weight=0., visual_center=None)
+        annotated = raw.copy()
+        for field, y, color in [('near_x', 180, (255, 255, 0)), ('far_x', 120, (0, 255, 255))]:
+            x = result.get(field)
+            if x is not None:
+                cv2.circle(annotated, (int(x), y), 5, color, 2)
+        cv2.putText(annotated, result['status'], (4, 17), cv2.FONT_HERSHEY_SIMPLEX,
+                    .33, (255, 0, 255), 1)
+        cv2.putText(annotated, 'EXIT CLASS NOT TRAINED' if 5 not in self.active_indices else 'LEARNED PATH',
+                    (4, 64), cv2.FONT_HERSHEY_SIMPLEX, .34, (0, 200, 255), 1)
+        return annotated, mask, result

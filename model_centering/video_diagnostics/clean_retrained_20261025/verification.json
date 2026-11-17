@@ -1,0 +1,9 @@
+{
+  "validation_images": 773,
+  "valid_x_outputs": 773,
+  "invalid_x_outputs": 0,
+  "runtime_matches_training_preprocessing": true,
+  "model_x_smoke": 181.19112491607666,
+  "hardware_tested": false,
+  "tests_passed": 16
+}

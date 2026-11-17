@@ -1,0 +1,15 @@
+{
+  "source_sha256": "08cecb4c590c4c6f6d0ac5dc7c1c2ce1d6bc1619a9f471001e4b6c93c0744492",
+  "functions": [
+    "clean_text",
+    "get_contours",
+    "get_solidity",
+    "expand_box",
+    "find_stop_candidate",
+    "find_blue_square_candidate",
+    "check_white_p_shape",
+    "run_stop_ocr",
+    "run_p_ocr"
+  ],
+  "changes": "Keep supplied constants and function bodies; replace pytesseract import with bounded CLI adapter; omit original main/camera loop."
+}

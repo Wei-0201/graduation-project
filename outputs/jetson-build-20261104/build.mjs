@@ -1,0 +1,47 @@
+import fs from 'node:fs/promises';
+import { Workbook, SpreadsheetFile } from '@oai/artifact-tool';
+
+const data = JSON.parse((await fs.readFile(new URL('./data.json', import.meta.url), 'utf8')).replace(/^\uFEFF/, ''));
+const wb = Workbook.create();
+const sheet = wb.worksheets.add('執行紀錄');
+sheet.showGridLines = false;
+const r = address => sheet.getRange(address);
+function line(row, value) {
+  r(`A${row}:H${row}`).merge();
+  r(`A${row}`).values = [[value]];
+}
+line(1, 'Jetson 車道置中執行紀錄');
+line(2, '2026/10/26～11/04｜已取得的四份 CSV');
+r('A4:H4').values = [['來源 CSV', '筆數', '首張時間戳', '末張時間戳', '記錄時長（秒）', 'AUTO 模式（秒）', '自動行駛（秒）', '手動行駛（秒）']];
+r('A5:H8').values = data.map(d => [d.name,d.rows,d.first,d.last,null,d.auto,d.drive,d.manual]);
+r('E5:E8').formulas = data.map((_,i) => [`=D${i+5}-C${i+5}`]);
+r('A9').values = [['合計']];
+for (const col of ['B','E','F','G','H']) r(`${col}9`).formulas = [[`=SUM(${col}5:${col}8)`]];
+line(11, '記錄時長為末張減首張擷取時間，包含啟動、等待與停車。');
+line(12, '行駛時間依相鄰紀錄的處理時間差及指令類型估算，代表送出行駛指令的時間。');
+line(13, '期間依已取得檔案的清單整理。CSV 為單調時間戳，無法獨立確認測試日期。');
+r('A1:H13').format.font = {name:'Microsoft JhengHei', size:11, color:'#142B3D'};
+r('A1:H13').format.rowHeight = 22;
+r('A1:H1').format.fill = '#18374D';
+r('A1:H1').format.font = {name:'Microsoft JhengHei', size:17, bold:true, color:'#FFFFFF'};
+r('A1:H1').format.rowHeight = 35;
+r('A4:H4').format.fill = '#27636A';
+r('A4:H4').format.font = {name:'Microsoft JhengHei', bold:true, color:'#FFFFFF'};
+r('A6:H6').format.fill = '#EDF5F5';
+r('A8:H8').format.fill = '#EDF5F5';
+r('A9:H9').format.fill = '#CEE5E6';
+r('A9:H9').format.font = {name:'Microsoft JhengHei',bold:true,color:'#142B3D'};
+r('A:A').format.columnWidth = 32;
+r('B:B').format.columnWidth = 9;
+r('C:H').format.columnWidth = 19;
+r('B5:B9').format.numberFormat = '#,##0';
+r('C5:D8').format.numberFormat = '0.000';
+r('E5:H9').format.numberFormat = '0.0';
+wb.recalculate();
+const expected = data.reduce((total,d)=>total+d.last-d.first,0);
+if (Math.abs(r('E9').values[0][0]-expected)>1e-6) throw new Error('Duration mismatch');
+console.log(JSON.stringify(r('A9:H9').values));
+const preview = await wb.render({sheetName:'執行紀錄',range:'A1:H13',scale:1});
+await fs.writeFile(new URL('./preview.png',import.meta.url),new Uint8Array(await preview.arrayBuffer()));
+const result = await SpreadsheetFile.exportXlsx(wb);
+await result.save('outputs/jetson-runtime-20261104/Jetson執行紀錄_20261104.xlsx');

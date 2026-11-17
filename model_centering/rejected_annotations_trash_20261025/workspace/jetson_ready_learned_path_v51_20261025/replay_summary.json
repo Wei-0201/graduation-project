@@ -1,0 +1,26 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "early_samples": 24,
+      "old_mean_turn": -0.005340921878814697,
+      "candidate_mean_turn": -0.12524969750556839,
+      "preview_active": 24
+    },
+    {
+      "run": 2,
+      "early_samples": 13,
+      "old_mean_turn": -0.29966886960543115,
+      "candidate_mean_turn": -0.39025519892948324,
+      "preview_active": 13
+    },
+    {
+      "run": 3,
+      "early_samples": 22,
+      "old_mean_turn": -0.051806510578502316,
+      "candidate_mean_turn": -0.1511616471320355,
+      "preview_active": 22
+    }
+  ],
+  "note": "Recorded inputs only. Cannot infer resulting physical path."
+}

@@ -1,0 +1,43 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>近處路徑與進彎階段標註</title>
+<style>
+body{font:18px system-ui;max-width:980px;margin:24px auto;padding:0 16px;background:#f4f6f8;color:#172335}
+h1{font-size:27px}p,li{line-height:1.6}canvas{display:block;width:min(640px,100%);height:auto;border:2px solid #64748b;cursor:crosshair}
+button{font:inherit;padding:10px 14px;margin:6px 6px 6px 0;border:1px solid #94a3b8;border-radius:7px;background:white;cursor:pointer}
+button:disabled{opacity:.4;cursor:default}.primary{background:#145dcc;color:white}.note{font-size:15px;color:#475569}
+#prompt{padding:10px;background:white;border-left:5px solid #145dcc;font-weight:bold}#counts{font-size:15px;margin:8px 0}
+#stages{position:sticky;bottom:0;background:#f4f6f8;padding:5px 0;border-top:1px solid #cbd5e1}summary{cursor:pointer;margin:10px 0}
+</style><h1>學習進彎、彎中與回到直線</h1>
+<p><b>每張選一個路段狀態，就會儲存並換下一張。</b>依照車道形狀選擇，不是依照車子偏左或偏右選。</p>
+<details><summary>標註方式與各狀態的意思（點開）</summary>
+<ul><li><b>即將左／右彎</b>：近處仍是直路，遠處開始向左／右彎。</li>
+<li><b>正在左／右彎</b>：近處車道已經在彎。</li>
+<li><b>即將回直線</b>：近處仍在彎，前方車道已接成直路。已經整段直路則選「直線」。</li></ul>
+<p><b>選填加強：</b>選狀態前，可先點下方藍線高度的車道中央，再點上方黃線高度的中央。這會幫模型區分「現在要走的位置」與「前方路線」。每一點都要落在該橫線高度兩條邊界之間；看不到就不點，不要猜。</p>
+<p class="note">路段無法判斷選「不確定」；車道已完全看不到、人手遮擋或跑出去而無法判斷，按「略過整張」。這個頁面不會控制車子。</p>
+</details>
+<div id="counts"></div><div id="prompt"></div><canvas id="photo" width="320" height="240"></canvas>
+<div><button id="noFar" onclick="noFar()">遠處看不到</button><button onclick="redo()">清除本張中央點</button><button onclick="skip()">略過整張</button></div>
+<div id="stages"></div><div><button onclick="move(-1)">上一張</button><button onclick="move(1)">下一張</button><button class="primary" onclick="download()">下載標註結果</button></div>
+<p class="note">完成後下載 path_stage_labels_20261025.json，回傳對話。進度儲存在本機瀏覽器。</p>
+<script>
+const items=__SAMPLES__,key='learned-path-stage-reset-after-rejection-20261025';
+const stageNames=['直線','即將左彎','正在左彎','即將右彎','正在右彎','即將回直線','不確定'];
+const stageKeys=['straight','approach_left','turn_left','approach_right','turn_right','exit_straight','unknown'];
+let state={labels:{},skipped:[],index:0};try{Object.assign(state,JSON.parse(localStorage.getItem(key)||'{}'))}catch(e){}
+let index=Math.max(0,Math.min(items.length-1,state.index||0)),draft={},phase=0,img;
+const canvas=document.getElementById('photo'),ctx=canvas.getContext('2d');
+stageNames.forEach((name,i)=>{let b=document.createElement('button');b.textContent=name;b.onclick=()=>save(stageKeys[i]);document.getElementById('stages').appendChild(b)});
+function persist(){state.index=index;localStorage.setItem(key,JSON.stringify(state))}
+function draw(){if(!img||!img.complete)return;ctx.drawImage(img,0,0,320,240);[[180,'#00bfff'],[120,'#ffe247']].forEach(([y,c])=>{ctx.strokeStyle=c;ctx.lineWidth=1;ctx.setLineDash([5,4]);ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(320,y);ctx.stroke();ctx.setLineDash([])});[['near_x',180,'#00bfff'],['far_x',120,'#ffe247']].forEach(([k,y,c])=>{if(Number.isFinite(draft[k])){ctx.strokeStyle=c;ctx.lineWidth=2;ctx.beginPath();ctx.arc(draft[k],y,5,0,2*Math.PI);ctx.stroke()}})}
+function prompt(){document.getElementById('prompt').textContent=phase===0?'請選路段狀態；也可先補點下方藍線的中央（選填）':phase===1?'近處已點好；可補點上方黃線中央，或直接選路段':'兩個中央點已備妥，請選路段狀態';document.getElementById('noFar').disabled=phase!==1}
+function render(){const r=items[index];draft={...(state.labels[r.id]||{})};phase=Number.isFinite(draft.near_x)&&Object.hasOwn(draft,'far_x')?2:0;document.getElementById('counts').textContent=`第 ${index+1}/${items.length} 張｜已標 ${Object.keys(state.labels).length}｜略過 ${state.skipped.length}｜${r.group} 畫面 ${r.frame}${draft.stage?'｜已存：'+stageNames[stageKeys.indexOf(draft.stage)]:''}`;img=new Image();img.onload=draw;img.src=r.image;prompt();persist()}
+canvas.onclick=e=>{if(phase===2)return;const box=canvas.getBoundingClientRect(),x=Math.max(0,Math.min(319,Math.round((e.clientX-box.left)*320/box.width)));draft[phase===0?'near_x':'far_x']=x;phase++;draw();prompt()};
+function noFar(){if(phase!==1)return;draft.far_x=null;phase=2;draw();prompt()}
+function redo(){draft={};phase=0;draw();prompt()}
+function save(stage){state.labels[items[index].id]={near_x:Number.isFinite(draft.near_x)?draft.near_x:null,far_x:Number.isFinite(draft.far_x)?draft.far_x:null,stage};state.skipped=state.skipped.filter(id=>id!==items[index].id);persist();if(index<items.length-1){index++;render()}else{draft.stage=stage;render();document.getElementById('prompt').textContent='已到最後一張，請下載標註結果（也可回頭檢查）'}}
+function skip(){let id=items[index].id;delete state.labels[id];if(!state.skipped.includes(id))state.skipped.push(id);persist();move(1)}
+function move(n){index=Math.max(0,Math.min(items.length-1,index+n));render()}
+function download(){persist();let data={schema:'learned-path-stage-v1',width:320,height:240,near_y:180,far_y:120,items:Object.entries(state.labels).map(([id,r])=>({id,...r})),skipped:state.skipped};let url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='path_stage_labels_20261025.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+render();
+</script></html>

@@ -1,0 +1,88 @@
+{
+  "checked_frames": 230,
+  "observed_corridor_frames": 149,
+  "pc_elapsed_s": 0.266,
+  "user_functions_unchanged": true,
+  "tests_passed": 51,
+  "real_tesseract_tested_on_pc": false,
+  "hardware_tested": false,
+  "examples": [
+    [
+      20,
+      {
+        "left": 42.85000000000005,
+        "right": 277.85,
+        "width": 234.99999999999997,
+        "position": 0.4985106382978722,
+        "far_left": 80.80000000000004,
+        "far_right": 256.70000000000005,
+        "heading": -0.04825481112334146,
+        "right_gap_px": 117.85000000000002,
+        "right_observed": true,
+        "source": "PAIR"
+      }
+    ],
+    [
+      40,
+      {
+        "left": 42.85000000000005,
+        "right": 277.65,
+        "width": 234.79999999999993,
+        "position": 0.49893526405451444,
+        "far_left": 80.80000000000004,
+        "far_right": 256.79999999999995,
+        "heading": -0.04893526405451443,
+        "right_gap_px": 117.64999999999998,
+        "right_observed": true,
+        "source": "PAIR"
+      }
+    ],
+    [
+      60,
+      {
+        "left": 42.75000000000003,
+        "right": 277.75,
+        "width": 234.99999999999997,
+        "position": 0.4989361702127659,
+        "far_left": 80.70000000000002,
+        "far_right": 256.9,
+        "heading": -0.04887941652377609,
+        "right_gap_px": 117.75,
+        "right_observed": true,
+        "source": "PAIR"
+      }
+    ],
+    [
+      80,
+      {
+        "left": 42.54999999999998,
+        "right": 277.75,
+        "width": 235.20000000000002,
+        "position": 0.4993622448979592,
+        "far_left": 80.79999999999995,
+        "far_right": 256.9,
+        "heading": -0.04961778152487556,
+        "right_gap_px": 117.75,
+        "right_observed": true,
+        "source": "PAIR"
+      }
+    ],
+    [
+      100,
+      {
+        "left": 42.54999999999998,
+        "right": 277.95,
+        "width": 235.4,
+        "position": 0.4989379779099406,
+        "far_left": 80.79999999999995,
+        "far_right": 256.79999999999995,
+        "heading": -0.04893797790994037,
+        "right_gap_px": 117.94999999999999,
+        "right_observed": true,
+        "source": "PAIR"
+      }
+    ]
+  ],
+  "packaged_model_smoke": true,
+  "missing_engine_blocks_startup": true
+}
